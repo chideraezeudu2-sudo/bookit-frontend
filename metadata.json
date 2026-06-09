@@ -1,0 +1,6 @@
+{
+  "name": "Bookit",
+  "description": "Automated SMS booking assistant for Tradespeople. Never miss a lead again.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-lime-signal: #e4f222;
+  --color-cobalt-glow: #5683d2;
+  --color-obsidian: #0c0a08;
+  --color-paper: #ffffff;
+  --color-limestone: #f4f2f0;
+  --color-charcoal: #1a1919;
+  --color-slate: #4d505d;
+  --color-fog: #999ba3;
+  --color-bone: #d2cecb;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --radius-nav: 4px;
+  --radius-tags: 9999px;
+  --radius-cards: 12px;
+  --radius-images: 12px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-obsidian);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, .font-display-title {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom fade scroll effects */
+.transition-all-custom {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Scroll progress animation indicator */
+.parallax-bg {
+  background: radial-gradient(circle at top right, rgba(86, 131, 210, 0.15) 0%, rgba(12, 10, 8, 0) 60%);
+}
+
+.dawn-gradient {
+  background: linear-gradient(180deg, #0c0a08 0%, #1a1919 40%, #2a354d 75%, #f4f2f0 100%);
+}
+
+.iphone-bezel {
+  outline: 6px solid var(--color-charcoal);
+  border: 1px solid var(--color-slate);
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
