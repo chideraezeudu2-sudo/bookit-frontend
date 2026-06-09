@@ -18,6 +18,7 @@ export default defineConfig(() => {
     preview: {
       host: '0.0.0.0',
       port: 10000,
+      allowedHosts: ['bookit-frontend-7q79.onrender.com', '.onrender.com'],
     },
   };
 });
